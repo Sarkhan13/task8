@@ -1,0 +1,163 @@
+.menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: rgb(41, 40, 40);
+    color: white;
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.menu a:hover{
+    background-color: black;
+}
+
+.home{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 500px;
+    margin: auto;
+    margin-top: 10px;
+
+}
+
+.category{
+    background-color: rgb(11, 129, 129);
+    padding: 10px;
+    height: 210px;
+}
+
+.category a{
+    display: block;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.category a:hover{
+    background-color: rgb(21, 104, 104);
+}
+
+
+
+.cat-title{
+    color: white;
+    font-size: 25px;
+    border-bottom: 1px solid black;
+}
+
+.slider{
+    background: url('1.jfif') no-repeat;
+    width: 1000px;
+    background-size: cover;
+    position: relative;
+}
+
+.slider-text{
+    position: absolute;
+    bottom: 45px;
+    left: 30%;
+    width: 300px;
+    color: white;
+    font-size: 16px;
+}
+
+.slider button{
+    position: absolute;
+    bottom: 15px;
+    width: 100px;
+    left: 40%;
+    background-color: brown;
+    color: white;
+    padding: 3px;
+}
+
+.services{
+    position: absolute;
+    right: 0;
+    width: 80%;
+    background-color: rgb(228, 236, 243);
+    margin-top: 15px;
+}
+
+.service-title{
+    
+    margin: 20px;
+    padding: 20px;
+    border-left: 5px red solid;
+    font-size: 25px;
+}
+
+.services-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service{
+    margin-left: 10px;
+    width: 30%;
+    background-color: antiquewhite;
+    margin-top: 10px;
+}
+
+.service-img{
+    width: 100%;
+    height: 300px;
+}
+
+.service-img img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.service-text{
+    text-align: center;
+    padding: 20px;
+
+}
+
+@media only screen and (max-width: 560px){
+    
+    
+
+    .menu-items{
+        display:none ;
+    }
+
+    .menu{
+        justify-content: center;
+    }
+
+    .slider{
+        display: none;
+    }
+
+    .category{
+        width: 90%;
+        margin: auto;
+    }
+
+    .services-list{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .services{
+        position: absolute;
+        left: 50px;
+    }
+
+    .service{
+        width: 60%;
+    }
+}
+
